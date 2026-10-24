@@ -40,4 +40,23 @@ O projeto está publicado utilizando o GitHub Pages.
 
 Júlio César de Paula Júnior
 
-Projeto desenvolvido para fins educacionais na disciplina de Programação Web I.# pagina-pessoal
+Projeto desenvolvido para fins educacionais na disciplina de Programação Web I.
+
+## Atividade 3 - Formulário de Contato
+
+Nesta atividade da disciplina de Programação Web I, foi implementado um formulário de contato na Página Pessoal desenvolvida anteriormente.
+
+### Funcionalidades implementadas
+
+- Campo para nome;
+- Campo para e-mail com validação HTML;
+- Campo para assunto;
+- Área de texto para mensagem;
+- Validação de campos obrigatórios;
+- Botão Enviar;
+- Botão Limpar;
+- Organização dos campos com fieldset e legend.
+
+### Captura de tela
+
+![Formulário de contato](imagens/formulario-contato.png)
