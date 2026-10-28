@@ -1,0 +1,428 @@
+/* Paleta de cores */
+:root {
+    --cor-fundo: #0B141A;
+    --cor-card: #142631;
+    --cor-destaque: #22D3EE;
+    --cor-texto: #E2E8F0;
+    --cor-texto-secundario: #94A3B8;
+    --cor-borda: #244653;
+}
+
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--cor-destaque);
+    margin-top: 0;
+}
+
+/* Parágrafos */
+p {
+    color: var(--cor-texto-secundario);
+}
+
+/* Links */
+a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* CARD DE APRESENTAÇÃO */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#apresentacao {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 30px;
+}
+
+.apresentacao-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.apresentacao-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.apresentacao-foto {
+    flex: 0 0 320px;
+}
+
+.apresentacao-foto img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid var(--cor-destaque);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 768px) {
+    .apresentacao-conteudo {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #apresentacao {
+        padding: 22px;
+    }
+
+    .apresentacao-foto {
+        flex: none;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .apresentacao-foto img {
+        height: auto;
+    }
+}
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #101F28;
+    border-bottom: 1px solid var(--cor-borda);
+    padding: 20px;
+}
+
+.cabecalho-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Nome e descrição */
+.logo h1 {
+    color: var(--cor-destaque);
+    font-size: 26px;
+    margin: 0;
+}
+
+.logo p {
+    color: var(--cor-texto-secundario);
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Menu de navegação */
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-principal a {
+    color: var(--cor-texto);
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-principal a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Adaptação para celulares */
+@media (max-width: 768px) {
+    .cabecalho-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-principal {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+
+/* CARDS DE HOBBIES */
+
+/* Seção de hobbies */
+#hobbies {
+    margin-bottom: 40px;
+}
+
+#hobbies h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* Organização dos cards */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Aparência dos cards */
+.hobby-card {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.hobby-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--cor-destaque);
+    box-shadow: 0 8px 25px rgba(34, 211, 238, 0.12);
+}
+
+/* Ícones */
+.hobby-icone {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Títulos */
+.hobby-card h3 {
+    color: var(--cor-texto);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* Descrições */
+.hobby-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* FORMULÁRIO DE CONTATO */
+
+#contato {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+#contato h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* Organização do formulário */
+#contato form {
+    max-width: 700px;
+}
+
+#contato fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#contato legend {
+    color: var(--cor-destaque);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Espaçamento entre os campos */
+#contato form div {
+    margin-bottom: 18px;
+}
+
+/* Rótulos */
+#contato label {
+    display: block;
+    color: var(--cor-texto);
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+/* Campos de texto */
+#contato input,
+#contato textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Destaque ao selecionar um campo */
+#contato input:focus,
+#contato textarea:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.2);
+}
+
+/* Área da mensagem */
+#contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botões */
+#contato button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botão Enviar */
+#contato button[type="submit"] {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    border: 1px solid var(--cor-destaque);
+}
+
+/* Botão Limpar */
+#contato button[type="reset"] {
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+}
+
+/* Efeitos dos botões */
+#contato button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(34, 211, 238, 0.15);
+}
+
+/* Adaptação para celulares */
+@media (max-width: 768px) {
+    #contato {
+        padding: 22px;
+    }
+}
+
+/* Centralização do formulário */
+#contato form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #10212b;
+    border-top: 1px solid #244653;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+footer a {
+    color: #22d3ee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+/* PÁGINA SOBRE MIM */
+
+main > section {
+    margin-bottom: 25px;
+}
+
+/* Cards da página Sobre Mim */
+body:has(a[href="index.html#apresentacao"]) main section {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+body:has(a[href="index.html#apresentacao"]) main section h2 {
+    margin-bottom: 20px;
+}

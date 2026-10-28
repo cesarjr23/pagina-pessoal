@@ -60,3 +60,34 @@ Nesta atividade da disciplina de Programação Web I, foi implementado um formul
 ### Captura de tela
 
 ![Formulário de contato](imagens/formulario-contato.png)
+
+## Atividade 4 - Estilização da Página Pessoal com CSS
+
+Nesta atividade da disciplina de Programação Web I, foi realizada a estilização da Página Pessoal desenvolvida nas atividades anteriores, utilizando CSS externo.
+
+O objetivo foi melhorar a apresentação visual do site, mantendo sua estrutura HTML e aplicando conceitos de estilização aprendidos durante as aulas.
+
+### Estilizações implementadas
+
+- Criação do arquivo externo `style.css`;
+- Aplicação do tema escuro Dark Tech, com detalhes em ciano;
+- Personalização das cores, fontes e títulos;
+- Estilização do cabeçalho e do menu de navegação;
+- Organização da apresentação pessoal em um card com imagem;
+- Criação de cards para os hobbies e interesses;
+- Aplicação de bordas arredondadas, margens e espaçamentos;
+- Estilização do formulário de contato e seus botões;
+- Personalização do rodapé;
+- Padronização visual das páginas `index.html` e `sobre.html`;
+- Aplicação de efeitos visuais em elementos interativos.
+
+### Tecnologias utilizadas
+
+- HTML5 — estrutura das páginas;
+- CSS3 — estilização e organização visual;
+- Git e GitHub — versionamento do projeto;
+- GitHub Pages — publicação do site.
+
+### Captura de tela
+
+![Página pessoal estilizada com CSS](imagens/pagina-estilizada.png)

@@ -6,57 +6,87 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha página pessoal</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            <h1>Olá, eu sou Júlio!</h1>
-            <p>Estudante do curso Técnico em Informática para Internet</p>
+        <header class="cabecalho">
+            <div class="cabecalho-conteudo">
+
+                <div class="logo">
+                    <h1>Júlio César</h1>
+                    <p>Estudante de Tecnologia</p>
+                </div>
+
+                <nav class="menu-principal">
+                    <a href="index.html">Início</a>
+                    <a href="#apresentacao">Sobre</a>
+                    <a href="sobre.html">Saiba mais</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+
+            </div>
         </header>
 
         <main>
             <section id="apresentacao">
-                <h2>Sobre mim:</h2>
+                <div class="apresentacao-conteudo">
+                    <div class="apresentacao-texto">
+                        <h2>Sobre mim:</h2>
 
-                <p>
-                    Meu nome é Júlio, tenho 26 anos e sou de Barbacena - MG. Já cursei TSI no IFMG - Campus Barbacena, porém não concluí devido o fato
-                    de ser período integral. Atualmente curso Engenharia de Software na UNICESUMAR, na modalidade
-                    híbrida, e estou trabalhando na área de administração e gestão de pessoas, sendo encarregado
-                    de um contrato de uma empresa terceirizada da CEMIG.
-                </p>
+                        <p>
+                            Meu nome é Júlio, tenho 26 anos e sou de Barbacena - MG. Já cursei TSI no IFMG - Campus Barbacena, porém não concluí devido o fato
+                            de ser período integral. Atualmente curso Engenharia de Software na UNICESUMAR, na modalidade
+                            híbrida, e estou trabalhando na área de administração e gestão de pessoas, sendo encarregado
+                            de um contrato de uma empresa terceirizada da CEMIG.
+                        </p>
 
-                <p>
-                    Meu objetivo com o curso é me especializar ainda mais na área de tecnologia, juntamente com o 
-                    superior em curso, para que possa dessa maneira, conseguir entrar no mercado de trabalho da melhor
-                    forma possível, onde sempre foi o meu foco e intuito seguir carreira.
-                </p>
+                        <p>
+                            Meu objetivo com o curso é me especializar ainda mais na área de tecnologia, juntamente com o 
+                            superior em curso, para que possa dessa maneira, conseguir entrar no mercado de trabalho da melhor
+                            forma possível, onde sempre foi o meu foco e intuito seguir carreira.
+                        </p>
+                    </div>
 
-                <img src="imagens/minha-foto.jpg" alt="Foto de apresentação pessoal" width="450">
+                    <div class="apresentacao-foto">        
+                        <img src="imagens/minha-foto.jpg" alt="Foto de apresentação pessoal" width="450">
+                    </div>
+                </div>
             </section>
 
             <section id="hobbies">
                 <h2>Meus hobbies e interesses:</h2>
 
-                <ul>
-                    <li>Ver notícias sobre tecnologia</li>
-                    <li>Jogar videogame</li>
-                    <li>Fazer viagens nos finais de semana</li>
-                    <li>Ir na academia</li>
-                </ul>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <span class="hobby-icone">💻</span>
+                        <h3>Tecnologia</h3>
+                        <p>Notícias e novidades sobre tecnologia.</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <span class="hobby-icone">🎮</span>
+                        <h3>Games</h3>
+                        <p>Jogos e entretenimento.</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <span class="hobby-icone">✈️</span>
+                        <h3>Viagens</h3>
+                        <p>Conhecer novos lugares nos finais de semana.</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <span class="hobby-icone">🏋️</span>
+                        <h3>Academia</h3>
+                        <p>Atividade física e bem-estar.</p>
+                    </div>
+                </div>
             </section>
 
-            <nav>
-                <h2>Navegação:</h2>
-
-                <ul>
-                    <li><a href="#apresentacao">Minha apresentação</a></li>
-                    <li><a href="#hobbies">Meus hobbies</a></li>
-                    <li><a href="sobre.html">Saiba mais sobre mim</a></li>
-                </ul>
-            </nav>
-
             <section id="contato">
-                <h2>Entre em contato</h2>
+                <h2>Entre em contato:</h2>
                 
                 <form>
                     <fieldset>
@@ -98,7 +128,7 @@
 
             <p>
                 <a href="https://github.com/cesarjr23" target="_blank" rel="noopener noreferrer">
-                    Meu GitHub
+                    Link para o GitHub
                 </a>
             </p>
         </footer>
