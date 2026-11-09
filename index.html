@@ -1,136 +1,455 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Minha página pessoal</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Júlio César | Página Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <header class="cabecalho">
-            <div class="cabecalho-conteudo">
+<body>
 
-                <div class="logo">
-                    <h1>Júlio César</h1>
-                    <p>Estudante de Tecnologia</p>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+
+            <div class="logo">
+                <h1>Júlio César</h1>
+                <p>Estudante de Tecnologia</p>
+            </div>
+
+            <nav class="menu-principal">
+                <a href="index.html">Início</a>
+                <a href="#apresentacao">Sobre</a>
+                <a href="sobre.html">Saiba mais</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="apresentacao">
+
+            <div class="apresentacao-conteudo">
+
+                <div class="apresentacao-texto">
+
+                    <h2>Sobre mim:</h2>
+
+                    <p>
+                        Olá! Sou Júlio César, estudante de Engenharia de Software e do curso Técnico em Informática 
+                        para Internet, com grande interesse por tecnologia e desenvolvimento de software.
+                    </p>
+
+                    <p>
+                        Atualmente, trabalho com gestão operacional, liderando equipes, acompanhando indicadores 
+                        de desempenho e buscando soluções para melhorar processos. Essa experiência me mostrou como a 
+                        tecnologia pode transformar problemas do dia a dia em oportunidades de inovação.
+                    </p>
+
+                    <p>
+                        Estou em processo de transição de carreira para a área de desenvolvimento, aprofundando meus 
+                        conhecimentos em programação, desenvolvimento web e bancos de dados. 
+                        Procuro colocar em prática o que aprendo por meio de projetos próprios, como o VERTIS, 
+                        um sistema de gestão operacional que estou desenvolvendo a partir de necessidades reais 
+                        do meu ambiente de trabalho.
+                    </p>
+
+                    <p>
+                        Meu objetivo é construir uma carreira sólida como desenvolvedor de software, 
+                        combinando minha experiência profissional com os conhecimentos técnicos que venho adquirindo 
+                        e mantendo o aprendizado contínuo como parte dessa jornada.
+                    </p>
+
                 </div>
 
-                <nav class="menu-principal">
-                    <a href="index.html">Início</a>
-                    <a href="#apresentacao">Sobre</a>
-                    <a href="sobre.html">Saiba mais</a>
-                    <a href="#hobbies">Hobbies</a>
-                    <a href="#contato">Contato</a>
-                </nav>
+                <div class="apresentacao-foto">
+                    <img
+                        src="imagens/minha-foto.jpg"
+                        alt="Foto de apresentação pessoal"
+                        width="450"
+                    >
+                </div>
 
             </div>
-        </header>
 
-        <main>
-            <section id="apresentacao">
-                <div class="apresentacao-conteudo">
-                    <div class="apresentacao-texto">
-                        <h2>Sobre mim:</h2>
+        </section>
 
-                        <p>
-                            Meu nome é Júlio, tenho 26 anos e sou de Barbacena - MG. Já cursei TSI no IFMG - Campus Barbacena, porém não concluí devido o fato
-                            de ser período integral. Atualmente curso Engenharia de Software na UNICESUMAR, na modalidade
-                            híbrida, e estou trabalhando na área de administração e gestão de pessoas, sendo encarregado
-                            de um contrato de uma empresa terceirizada da CEMIG.
-                        </p>
+        <section id="tecnologias">
 
-                        <p>
-                            Meu objetivo com o curso é me especializar ainda mais na área de tecnologia, juntamente com o 
-                            superior em curso, para que possa dessa maneira, conseguir entrar no mercado de trabalho da melhor
-                            forma possível, onde sempre foi o meu foco e intuito seguir carreira.
-                        </p>
-                    </div>
+            <h2>Tecnologias e Projetos</h2>
 
-                    <div class="apresentacao-foto">        
-                        <img src="imagens/minha-foto.jpg" alt="Foto de apresentação pessoal" width="450">
-                    </div>
-                </div>
-            </section>
-
-            <section id="hobbies">
-                <h2>Meus hobbies e interesses:</h2>
-
-                <div class="hobbies-grid">
-                    <div class="hobby-card">
-                        <span class="hobby-icone">💻</span>
-                        <h3>Tecnologia</h3>
-                        <p>Notícias e novidades sobre tecnologia.</p>
-                    </div>
-
-                    <div class="hobby-card">
-                        <span class="hobby-icone">🎮</span>
-                        <h3>Games</h3>
-                        <p>Jogos e entretenimento.</p>
-                    </div>
-
-                    <div class="hobby-card">
-                        <span class="hobby-icone">✈️</span>
-                        <h3>Viagens</h3>
-                        <p>Conhecer novos lugares nos finais de semana.</p>
-                    </div>
-
-                    <div class="hobby-card">
-                        <span class="hobby-icone">🏋️</span>
-                        <h3>Academia</h3>
-                        <p>Atividade física e bem-estar.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contato">
-                <h2>Entre em contato:</h2>
-                
-                <form>
-                    <fieldset>
-                        <legend>Dados para contato</legend>
-
-                        <div>
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-
-                        <div>
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div>
-                            <label for="assunto">Assunto:</label>
-                            <input type="text" id="assunto" name="assunto" required>
-                        </div>
-
-                        <div>
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
-                        </div>
-                    </fieldset>
-                    
-                    <div>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
-                    </div>
-                </form>
-
-            </section>
-
-        </main>
-
-        <footer>
-            <p>Desenvolvido por: Júlio César de Paula Júnior</p>
-
-            <p>
-                <a href="https://github.com/cesarjr23" target="_blank" rel="noopener noreferrer">
-                    Link para o GitHub
-                </a>
+            <p class="tecnologias-intro">
+                Tecnologias, ferramentas e projetos que fazem
+                parte da minha jornada no desenvolvimento
+                de software.
             </p>
-        </footer>
-    </body>
+
+            <div class="tecnologias-grid">
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/html5.svg"
+                            alt="Logotipo HTML5"
+                        >
+                        <h3>HTML5</h3>
+                    </div>
+
+                    <p>
+                        Estruturação semântica de páginas web,
+                        organizando conteúdos e elementos.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>HTML</span>
+                        <span>Web</span>
+                        <span>Semântica</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/css3.svg"
+                            alt="Logotipo CSS3"
+                        >
+                        <h3>CSS3</h3>
+                    </div>
+
+                    <p>
+                        Estilização de interfaces, criação de
+                        layouts responsivos e organização
+                        visual de páginas.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>CSS</span>
+                        <span>Flexbox</span>
+                        <span>Grid</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/javascript.svg"
+                            alt="Logotipo JavaScript"
+                        >
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <p>
+                        Desenvolvimento de funcionalidades
+                        e interatividade para aplicações web.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>JavaScript</span>
+                        <span>Lógica</span>
+                        <span>Web</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/typescript.svg"
+                            alt="Logotipo TypeScript"
+                        >
+                        <h3>TypeScript</h3>
+                    </div>
+
+                    <p>
+                        Desenvolvimento de aplicações utilizando
+                        tipagem estática para maior organização
+                        e segurança do código.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>TypeScript</span>
+                        <span>Tipagem</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/react.svg"
+                            alt="Logotipo React"
+                        >
+                        <h3>React</h3>
+                    </div>
+
+                    <p>
+                        Construção de interfaces web utilizando
+                        componentes reutilizáveis e organização
+                        de aplicações.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>React</span>
+                        <span>Componentes</span>
+                        <span>Frontend</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+
+                        <div class="tecnologia-icones">
+                            <img
+                                src="imagens/git.svg"
+                                alt="Logotipo Git"
+                            >
+                            <img
+                                src="imagens/github.svg"
+                                alt="Logotipo GitHub"
+                            >
+                        </div>
+
+                        <h3>Git e GitHub</h3>
+
+                    </div>
+
+                    <p>
+                        Controle de versões, organização de
+                        repositórios e acompanhamento da
+                        evolução dos projetos.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Versionamento</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/sqlite.svg"
+                            alt="Logotipo SQLite"
+                        >
+                        <h3>SQLite</h3>
+                    </div>
+
+                    <p>
+                        Banco de dados relacional leve,
+                        utilizado para armazenamento e
+                        gerenciamento de informações
+                        em aplicações.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>SQLite</span>
+                        <span>SQL</span>
+                        <span>Banco de Dados</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card">
+
+                    <div class="tecnologia-cabecalho">
+                        <img
+                            src="imagens/postgresql.svg"
+                            alt="Logotipo PostgreSQL"
+                        >
+                        <h3>PostgreSQL</h3>
+                    </div>
+
+                    <p>
+                        Sistema de gerenciamento de banco
+                        de dados relacional, utilizado
+                        para armazenamento e consultas
+                        de dados.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                        <span>Dados</span>
+                    </div>
+
+                </article>
+
+                <article class="tecnologia-card tecnologia-destaque">
+
+                    <div class="tecnologia-destaque-topo">
+
+                        <h3>VERTIS</h3>
+
+                        <span class="projeto-status">
+                            Em desenvolvimento
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Sistema de gestão operacional desenvolvido
+                        para automatizar processos, acompanhar
+                        indicadores de desempenho e transformar
+                        dados em informações para apoiar
+                        a tomada de decisões.
+                    </p>
+
+                    <div class="tecnologia-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Dashboards</span>
+                        <span>Automação</span>
+                        <span>Gestão Operacional</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="hobbies">
+
+            <h2>Meus hobbies e interesses:</h2>
+
+            <div class="hobbies-grid">
+
+                <div class="hobby-card">
+                    <span class="hobby-icone">💻</span>
+                    <h3>Tecnologia</h3>
+                    <p>
+                        Notícias e novidades sobre tecnologia.
+                    </p>
+                </div>
+
+                <div class="hobby-card">
+                    <span class="hobby-icone">🎮</span>
+                    <h3>Games</h3>
+                    <p>
+                        Jogos e entretenimento.
+                    </p>
+                </div>
+
+                <div class="hobby-card">
+                    <span class="hobby-icone">✈️</span>
+                    <h3>Viagens</h3>
+                    <p>
+                        Conhecer novos lugares nos finais
+                        de semana.
+                    </p>
+                </div>
+
+                <div class="hobby-card">
+                    <span class="hobby-icone">🏋️</span>
+                    <h3>Academia</h3>
+                    <p>
+                        Atividade física e bem-estar.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Entre em contato:</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Dados para contato</legend>
+
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input
+                            type="text"
+                            id="assunto"
+                            name="assunto"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            cols="40"
+                            required
+                        ></textarea>
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Desenvolvido por: Júlio César de Paula Júnior
+        </p>
+
+        <p>
+            <a
+                href="https://github.com/cesarjr23"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Link para o GitHub
+            </a>
+        </p>
+
+    </footer>
+
+</body>
 </html>
