@@ -91,3 +91,41 @@ O objetivo foi melhorar a apresentação visual do site, mantendo sua estrutura 
 ### Captura de tela
 
 ![Página pessoal estilizada com CSS](imagens/pagina-estilizada.png)
+
+
+
+## Atividade 5 - Página Pessoal com Flexbox e Grid Layout
+
+Nesta atividade da disciplina de Programação Web I, foi realizada
+a atualização da Página Pessoal desenvolvida nas atividades
+anteriores, aplicando os conceitos de CSS Grid Layout e Flexbox.
+
+O objetivo foi organizar os elementos da página utilizando
+diferentes técnicas de alinhamento, distribuição e posicionamento.
+
+### Recursos implementados
+
+- Criação de uma seção de Tecnologias e Projetos com cartões;
+- Utilização de CSS Grid para organizar os cartões em linhas e colunas;
+- Aplicação de `grid-template-columns` e `gap` para definir colunas e espaçamentos;
+- Utilização de Flexbox para organizar os elementos internos dos cartões;
+- Aplicação de `flex-direction`, `align-items` e `justify-content`;
+- Utilização de `grid-column` para fazer um cartão ocupar múltiplas colunas;
+- Organização da estrutura geral da página com CSS Grid;
+- Utilização de tags e imagens nos cartões;
+- Adaptação do layout para diferentes tamanhos de tela;
+- Manutenção dos estilos em uma folha CSS externa.
+
+### Arquivos atualizados
+
+- `index.html` - inclusão da seção de tecnologias e projetos;
+- `sobre.html` - atualização das informações e organização do conteúdo;
+- `style.css` - implementação dos layouts com Grid e Flexbox;
+- `imagens/` - inclusão dos ícones utilizados nos cartões.
+
+### Captura de tela
+
+A imagem abaixo apresenta o resultado da página após a
+aplicação dos conceitos de CSS Grid e Flexbox.
+
+![Página Pessoal com Flexbox e Grid](imagens/atividade-flexbox-grid.png)
